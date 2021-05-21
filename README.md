@@ -45,7 +45,7 @@ python3 run_model.py experiments/demo/train_config.ini
 
 Running this script will generate a log containing the training results. Using
 the provided train_config.ini config, you should expect the see the following
-final evaluation:
+final evaluation (numbers might vary a bit):
 
 ```
 Finished Evaluation Model.
