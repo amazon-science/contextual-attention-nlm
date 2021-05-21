@@ -265,6 +265,14 @@ class MetadataConstructor(nn.Module):
         context_emb = torch.tanh(context_emb)
         return context_emb
 
+
+'''
+Base LSTM models that we are conditioned with non-linguistic context. In the paper
+we provide two methods for adding the context to the LSTM model, a concatenation-based
+method and a factor-based method. This open-source codebase provides the concatenation-method
+since it generally yielded the best results.
+'''
+
 class ConcatLSTM(nn.Module):
     """
     Implements the hidden state ConcatCell Approach proposed by Mikolov et al. 2012

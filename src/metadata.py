@@ -12,7 +12,14 @@ Functions for converting metadata strings into metadata tokens.
 
 logger = logging.getLogger(__name__)
 
-# Datetime metadata processing functions
+'''
+Datetime metadata processing functions.
+
+These functions take in a string with the associated context and process it.
+The functions described below are the ones we use in the ACL paper, and we
+keep them here to showcase examples of processing functions. You will likely
+need to implement your own for your particular context.
+'''
 
 def split_datetime_md(md_string):
     """Convert md_string into date object"""

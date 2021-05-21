@@ -5,7 +5,7 @@ import torch
 from torch.nn import CrossEntropyLoss
 
 """
-Loss functions for training different models defined in models.py
+Loss functions for training different models defined in src/model.py
 """
 
 ce_loss_sum = CrossEntropyLoss(reduction="sum", ignore_index=0)
